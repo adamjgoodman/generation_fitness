@@ -1,0 +1,66 @@
+.bg-faded{
+  background: image_url('red_bg.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.nav-item {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dropdown-menu {
+  padding: 0;
+  font-size: 13px;
+  font-weight: lighter;
+  border: 0;
+  background: #d3382e;
+  border-radius: 0;
+}
+
+.logo_nav {
+  width: 215px;
+  height: 55px;
+}
+
+.navbar, .dropdown-item {
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+.dropdown-item:hover {
+  background: #d3382e;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+  color: white;
+}
+
+.navbar-toggleable-md .navbar-nav {
+    width: 90%;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.dropdown-toggle:after { content: none }
+
+@media screen and (min-width: 768px){
+  .dropdown:hover .dropdown-menu, .btn-group:hover .dropdown-menu{
+        display: block;
+    }
+    .dropdown-menu{
+        margin-top: 0;
+    }
+    .dropdown-toggle{
+        margin-bottom: 2px;
+    }
+    .navbar .dropdown-toggle, .nav-tabs .dropdown-toggle{
+        margin-bottom: 0;
+    }
+}

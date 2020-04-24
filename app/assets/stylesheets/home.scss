@@ -1,0 +1,34 @@
+.splash {
+  height: 575px;
+  background: image_url('red_bg.png');
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+
+.boom {
+  height: 580px;
+  width: auto;
+}
+
+.whats {
+  position: absolute;
+  bottom: 20px;
+  margin-left: 10px;
+  width: max-content;
+}
+
+.whats a {
+  color: white;
+  margin-right: 30px;
+  margin-left: 30px;
+  font-size: 28px;
+  font-weight: 100;
+  z-index: 1;
+}
+
+.whats a:hover {
+  text-decoration: none;
+}
