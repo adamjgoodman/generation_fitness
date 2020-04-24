@@ -8,6 +8,13 @@
   margin-bottom: 0;
 }
 
+.splash_2 {
+  margin-top: 0;
+  background: image_url('red_bg.png');
+  background-position: center;
+  background-size: cover;
+}
+
 .boom {
   height: 580px;
   width: auto;
@@ -31,4 +38,13 @@
 
 .whats a:hover {
   text-decoration: none;
+}
+
+.grid {
+  width: 350px;
+  height: 260px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 5px;
+  margin-left: 10px;
 }
