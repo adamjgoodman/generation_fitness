@@ -1,4 +1,7 @@
 <div class="splash">
+  <div class="hours">
+    Now Open 24 Hours, 7 Days a Week
+  </div>
   <div class="col-4">
     <%= image_tag 'boom.png', class: 'boom' %>
     <div class="whats row">
@@ -14,11 +17,51 @@
 
 <div class="splash_2 text-center">
   <div class="col-10 offset-1">
-    <%= image_tag 'xt_girl.png', class: 'grid mt-4' %>
-    <%= image_tag 'oldsters.png', class: 'grid mt-4' %>
+    <figure>
+      <%= image_tag 'xt_girl.png', class: 'grid' %>
+      <div class="overlay">
+        Our Story
+      </div>
+      <figcaption>
+        <div class="caption ml-auto mr-auto">
+          the <br/> Generation Fitness <br /> difference <hr class="hr_c" />
+        </div>
+      </figcaption>
+    </figure>
+    <figure>
+      <%= image_tag 'oldsters.png', class: 'grid' %>
+      <div class="overlay">
+        Testimonials
+      </div>
+      <figcaption>
+        <div class="caption ml-auto mr-auto">
+          Words from<br/> our members<hr class="hr_c" />
+        </div>
+      </figcaption>
+    </figure>
   </div>
-  <div class="col-10 offset-1 mt-4">
-    <%= image_tag 'class.png', class: 'grid' %>
-    <%= image_tag 'rower.png', class: 'grid' %>
+  <div class="col-10 offset-1 mt-2">
+    <figure>
+      <%= image_tag 'class.png', class: 'grid' %>
+      <div class="overlay">
+        Group Classes
+      </div>
+      <figcaption>
+        <div class="caption ml-auto mr-auto">
+          Generation<br/> <b>BetterTogether</b> <hr class="hr_c" />
+        </div>
+      </figcaption>
+    </figure>
+    <figure>
+      <%= image_tag 'rower.png', class: 'grid' %>
+      <div class="overlay">
+        Personal Training
+      </div>
+      <figcaption>
+        <div class="caption ml-auto mr-auto">
+          Generation<br/> <b>Results</b> <hr class="hr_c" />
+        </div>
+      </figcaption>
+    </figure>
   </div>
 </div>
