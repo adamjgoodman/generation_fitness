@@ -11,15 +11,10 @@
         <%= link_to 'home', root_path, class: 'nav-link' %>
       </li>
       <li class="nav-item">
-        <%= link_to 'our story', root_path, class: 'nav-link' %>
+        <%= link_to 'our story', page_path('ourstory'), class: 'nav-link' %>
       </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Member Experience
-        </a>
-        <div class="dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink">
-          <%= link_to 'Membership Offers', '#', class: 'dropdown-item nav-link' %>
-        </div>
+      <li class="nav-item">
+        <%= link_to 'membership offers', page_path('offers'), class: 'nav-link' %>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
