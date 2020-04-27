@@ -2,7 +2,15 @@
   max-width: 500px;
   max-height: 625px;
 }
-.offer_page {
-  background: image_url('class.png') no-repeat fixed;
+
+.right {
+  background: image_url('class.png') center no-repeat;
   background-size: cover;
+  position: static;
+}
+
+.left {
+  background: image_url('girlguy.png') left no-repeat;
+  background-size: cover;
+  background-position-x: 38%
 }
