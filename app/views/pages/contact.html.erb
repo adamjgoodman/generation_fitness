@@ -1,0 +1,27 @@
+<div class="contact_header">
+  <div class="tint">
+    <div class="classes">
+      Email Us
+    </div>
+  </div>
+</div>
+<div class="col-12 help">
+  Let us know how we can help
+</div>
+
+<div class="row mt-4 pt-2">
+  <div class="col-10 offset-1 col-sm-5">
+    Want to find out more about Generation Fitness?<br />
+    Questions about your membership?<br />
+    Fill out the form below and our dedicated member service representatives will be more than happy to assist you
+  </div>
+  <div class="col-10 offset-1 col-sm-5 contact_form text-center">
+    <%= form_with model: Prospect.new do |form| %>
+      <%= form.label :name, 'Name' %> <%= form.text_field :name, class: 'contact' %>
+      <%= form.label :email, 'Email Address' %> <%= form.email_field :email, class: 'contact' %>
+      <%= form.label :phone, 'Phone Number' %> <%= form.phone_field :phone, class: 'contact' %>
+      <%= form.label :message, 'Message' %> <%= form.text_area :message, class: 'contact' %>
+      <%= form.submit 'Submit', class: 'btn btn-primary', style: 'width:inherit;' %>
+    <% end %>
+  </div>
+</div>
