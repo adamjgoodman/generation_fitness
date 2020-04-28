@@ -9,19 +9,21 @@
   Let us know how we can help
 </div>
 
-<div class="row mt-4 pt-2">
-  <div class="col-10 offset-1 col-sm-5">
-    Want to find out more about Generation Fitness?<br />
-    Questions about your membership?<br />
-    Fill out the form below and our dedicated member service representatives will be more than happy to assist you
+<div class="row mt-4 mb-4 pt-2">
+  <div class="col-10 offset-1 col-sm-5 text-center"  style="background-color: whitesmoke;">
+    <div class="more">
+      Want to find out more about Generation Fitness?<br /><br />
+      Questions about your membership?<br /><br />
+      Fill out the form and our dedicated member service representatives will be more than happy to assist you
+    </div>
   </div>
-  <div class="col-10 offset-1 col-sm-5 contact_form text-center">
+  <div class="col-10 offset-1 col-sm-5 offset-sm-0 ml-sm-2 contact_form text-center" style="background-color: whitesmoke;">
     <%= form_with model: Prospect.new do |form| %>
       <%= form.label :name, 'Name' %> <%= form.text_field :name, class: 'contact' %>
       <%= form.label :email, 'Email Address' %> <%= form.email_field :email, class: 'contact' %>
       <%= form.label :phone, 'Phone Number' %> <%= form.phone_field :phone, class: 'contact' %>
       <%= form.label :message, 'Message' %> <%= form.text_area :message, class: 'contact' %>
-      <%= form.submit 'Submit', class: 'btn btn-primary', style: 'width:inherit;' %>
+      <%= form.submit 'Submit', class: 'btn btn-primary' %>
     <% end %>
   </div>
 </div>

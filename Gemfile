@@ -71,3 +71,7 @@ source 'https://rails-assets.org' do
 end
 
 gem 'pg'
+
+gem 'phonelib'
+
+gem 'valid_email2'
