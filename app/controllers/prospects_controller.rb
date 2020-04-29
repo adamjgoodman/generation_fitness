@@ -2,7 +2,7 @@ class ProspectsController < ApplicationController
 
   def create
     @prospect = Prospect.new(prospect_params)
-    @prospect.phone = @prospect.phone.insert(0,1)
+    @prospect.phone = @prospect.phone.insert(0,'1')
     if @prospect.valid?
       redirect_to page_path('contact'), notice: 'Thank you for contacting Generation Fitness!'
     else
