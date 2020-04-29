@@ -1,4 +1,7 @@
 Rails.application.configure do
+  config.action_mailer.default_url_options = { host: 'generation-fitness.herokuapp.com' }
+  config.action_mailer.perform_deliveries = true
+
   ActionMailer::Base.smtp_settings = {
     address: 'smtp.sendgrid.net',
     port: '587',
