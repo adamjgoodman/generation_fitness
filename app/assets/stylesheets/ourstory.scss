@@ -23,3 +23,10 @@
   font-size: 18px;
   padding: 20px;
 }
+
+@media only screen and (max-width: 768px) {
+  .hero {
+    height: 100%;
+    padding-bottom: 7%;
+  }
+}

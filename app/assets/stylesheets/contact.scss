@@ -52,3 +52,14 @@ label {
   padding-left: 15%;
   padding-right: 15%;
 }
+
+@media only screen and (max-width: 768px) {
+  .contact_header {
+    background: image_url('girlsmile.png') no-repeat;
+    background-size: cover;
+    height: 250px;
+  }
+  .help {
+    font-size: 23px;
+  }
+}

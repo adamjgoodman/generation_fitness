@@ -101,3 +101,49 @@
   font-size: 14px;
 }
 
+@media only screen and (max-width: 768px) {
+  .training_header {
+    background: image_url('rower.png') no-repeat;
+    background-size: cover;
+    height: 250px;
+  }
+  .fitness_header {
+    background: image_url('redzone.jpg') no-repeat;
+    background-size: cover;
+    height: 250px;
+  }
+  .tint {
+    height: 250px;
+  }
+  .classes {
+    font-size: 40px;
+  }
+  .trainer {
+    display: none;
+  }
+  .different {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: justify;
+    overflow-wrap: break-word;
+    h3 {
+      font-size: 1.25rem;
+      overflow-wrap: normal;
+    }
+  }
+  .why {
+    h2{
+      font-size: 1.5rem;
+    }
+    label {
+      margin-left: 0;
+    }
+  }
+  .contact {
+    width: 100%;
+  }
+  .spinners {
+    display: none;
+  }
+}

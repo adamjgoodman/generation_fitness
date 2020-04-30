@@ -28,3 +28,33 @@ body {
 .btn-primary:hover {
   cursor: pointer;
 }
+
+@media only screen and (max-width: 768px) {
+  .hours {
+    font-size: 22px;
+    top: 48%;
+    text-align: center;
+    padding-left: 0;
+    position: absolute;
+    margin-top: 350px;
+  }
+  .smash {
+    display: none;
+  }
+  #girl {
+    z-index: 0;
+  }
+  .splash {
+    background-position: left;
+  }
+  .navbar-toggleable-md .navbar-nav {
+    display: block;
+  }
+  .offers {
+    width: 90%;
+    height: auto;
+  }
+  .left, .right {
+    display: none;
+  }
+}
