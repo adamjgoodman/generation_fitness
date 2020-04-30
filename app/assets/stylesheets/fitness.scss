@@ -10,6 +10,18 @@
   color: white;
 }
 
+.training_header {
+  background: image_url('rower.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 320px;
+  position: auto;
+  box-shadow: 0px 3px 8px #2a2a2a;
+  color: white;
+}
+
 .tint {
   height: 320px;
   width: 100%;

@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>GenerationFitness</title>
+    <title>Generation Fitness - Fort Myers</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= favicon_link_tag asset_path('smallG.png') %>
   </head>
 
   <body>
+    <%= render partial: '/layouts/navbar' %>
     <% if notice.present? %>
       <p class="alert alert-info mb-0"><%= notice %></p>
     <% end %>
     <% if alert.present? %>
       <p class="alert alert-danger mb-0"><%= alert %></p>
     <% end %>
-    <%= render partial: '/layouts/navbar' %>
     <%= yield %>
     <%= render partial: '/layouts/footer' %>
   </body>

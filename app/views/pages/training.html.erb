@@ -1,0 +1,42 @@
+<div class="training_header">
+<div class="tint">
+  <div class="classes">
+    <b>Personal</b> Training
+  </div>
+</div>
+</div>
+<div class="col-12 row">
+  <div class="col-4 ml-0 mr-0">
+    <%= image_tag 'trainer.png', class: 'img-fluid' %>
+  </div>
+  <div class="col-7 ml-0 different">
+    <br />
+    <h5>GenerationStrong.GenerationPerformance.GenerationResults.</h5>
+    ​<br/>
+    <b>HEALTH:</b> We give you key measurements so you can understand how to improve your overall well-being
+    <br />
+    <b?FLEXIBILITY:</b> Learn the basics of body mobility and improve upon problem areas (tight hips, back, etc)
+    <br />
+    <b>STRENGTH/TONE:</b> Discover how to build muscle and strengthen your body resistance and weight exercises
+    <br />
+    <b>WEIGHT LOSS:</b> Understand your body composition and promote healthy, sustainable weight los​s
+    <br />    ​                                 
+    <b>ENERGY:</b> Improve your mood and energy levels with a consistent and effective fitness routine
+    <br />
+    <b>PERFORMANCE:</b> Utilize the latest athletic training techniques to improve performance in any sport​
+    <br />
+    <b>KNOWLEDGE:</b> Understand the value of your new membership by utilizing the various offerings and services (equipment orientation, classes, etc)
+    <br />
+</div>
+<div class="col-12 why text-left">
+  <h2>Book your FREE fitness assessment TODAY</h2>
+  *included with membership
+  <%= form_with model: Prospect.new do |form| %>
+    <%= form.label :name, 'Name' %> <%= form.text_field :name, class: 'contact' %>
+    <%= form.label :email, 'Email Address' %> <%= form.email_field :email, class: 'contact' %>
+    <%= form.label :phone, 'Phone Number' %> <%= form.phone_field :phone, class: 'contact' %>
+    <%= form.label :message, 'Best Time to Reach You' %> <%= form.text_field :message, class: 'contact' %>
+    <%= form.submit 'Submit', class: 'btn btn-primary', style: 'background-color: gray; margin-left:75px;' %>
+  <% end %>
+  <br />
+</div>

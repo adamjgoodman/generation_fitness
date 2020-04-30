@@ -4,9 +4,9 @@ class ProspectsController < ApplicationController
     @prospect = Prospect.create(prospect_params)
     @prospect.phone = @prospect.phone.insert(0,'1')
     if @prospect.valid?
-      redirect_to page_path('contact'), notice: 'Thank you for contacting Generation Fitness!'
+      redirect_to request.referrer, notice: 'Thank you for contacting Generation Fitness!'
     else
-    	redirect_to page_path('contact'), alert: "Invalid entry! Please try again."
+    	redirect_to request.referrer, alert: "Invalid entry! Please try again."
     end
   end
 
