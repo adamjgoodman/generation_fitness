@@ -25,18 +25,20 @@
         </figcaption>
       </figure>
     <% end %>
-    <figure>
-      <%= image_tag 'oldsters.png', class: 'grid' %>
-      <div class="overlay text-left mb-2" style="line-height:30px;">
-        #WeAre
-        <br />&nbsp; GenerationFitness
-      </div>
-      <figcaption>
-        <div class="caption ml-auto mr-auto">
-          Join the<br/><b>fitness generation<b><hr class="hr_c" />
+    <%= link_to page_path('weare') do %>
+      <figure>
+        <%= image_tag 'oldsters.png', class: 'grid' %>
+        <div class="overlay text-left mb-2" style="line-height:30px;">
+          #WeAre
+          <br />&nbsp; GenerationFitness
         </div>
-      </figcaption>
-    </figure>
+        <figcaption>
+          <div class="caption ml-auto mr-auto">
+            Join the<br/><b>fitness generation<b><hr class="hr_c" />
+          </div>
+        </figcaption>
+      </figure>
+    <% end %>
   </div>
   <div class="col-12 col-sm-10 offset-sm-1 mt-2">
     <%= link_to page_path('classes') do %>
