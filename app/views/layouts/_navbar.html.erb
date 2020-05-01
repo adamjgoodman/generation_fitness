@@ -6,12 +6,18 @@
     <%= image_tag 'logo_white.png', class: 'logo_nav' %>
   <% end %>
   <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-    <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+    <ul class="navbar-nav mr-auto mt-2 ml-auto mt-md-0">
       <li class="nav-item">
         <%= link_to 'home', root_path, class: 'nav-link' %>
       </li>
-      <li class="nav-item">
-        <%= link_to 'our story', page_path('ourstory'), class: 'nav-link' %>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Member Experience
+        </a>
+        <div class="dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink">
+          <%= link_to 'Our story', page_path('ourstory'), class: 'dropdown-item nav-link' %>
+          <%= link_to '#wearegenerationfitness', page_path('weare'), class: 'dropdown-item nav-link' %>
+        </div>
       </li>
       <li class="nav-item">
         <%= link_to 'membership offers', page_path('offers'), class: 'nav-link' %>

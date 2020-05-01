@@ -127,3 +127,31 @@ figure {
   width: 250px;
 }
 
+.gram {
+  height: auto;
+  width: auto;
+  display: inline-block;
+  
+  &:hover {
+      .gram_cap {
+          opacity: 1;
+          visibility: visible;
+      }
+  }
+  
+  .gram_cap {
+      background-color: rgba(#d3382e,0.9);
+      box-sizing: border-box;
+      height: 100%;
+      opacity: 0;
+      padding: 2em;
+      position: absolute;
+      top: 0;
+      transition: opacity .5s ease, visibility .5s;
+      visibility: hidden;
+      width: 100%;
+      color: white;
+      font-size: 13px;
+      overflow: scroll;
+  }
+}

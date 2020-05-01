@@ -1,0 +1,39 @@
+<script>
+  $(document).on('turbolinks:load', function() {
+    var container = document.querySelector('.grid');
+    // initialize Masonry after all images have loaded
+    imagesLoaded( 'html', function() {
+        var msnry = new Masonry( container, {
+            itemSelector: '.grid-item',
+            columnWidth: 20,
+            fitWidth: true
+        });
+    });
+  })
+</script>
+<% data = HTTParty.get('https://www.instagram.com/explore/tags/wearegenerationfitness/?__a=1') %>
+<% data = data.body %>
+<% data = JSON.parse(data) %>
+<% data = data["graphql"]["hashtag"]["edge_hashtag_to_media"]["edges"] %>
+
+<div class="col-12 text-center mt-4">
+  <h1>#WeAreGenerationFitness</h1>
+</div>
+
+<div class="grid mt-4">
+    <% data.shuffle.each do |data| %>
+      <% if data["node"]["owner"]["id"] != "275611699" %>
+      <div class="grid-item">
+        <figure class="gram">
+          <img class="img-fluid" src= "<%= data["node"]["display_url"] %>" >
+          <figcaption class="gram_cap">
+            <div class="ml-auto mr-auto">
+              <%= data["node"]["edge_media_to_caption"]["edges"][0]["node"]["text"] %>
+            </div>
+          </figcaption>        
+          </figure>
+      </div>
+      <% end %>
+    <% end %>
+</div>
+

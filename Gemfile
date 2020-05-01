@@ -79,3 +79,5 @@ gem 'valid_email2'
 gem "figaro"
 
 gem "letter_opener", :group => :development
+
+gem 'httparty'
