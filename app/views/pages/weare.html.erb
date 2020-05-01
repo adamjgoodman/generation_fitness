@@ -23,16 +23,20 @@
 <div class="grid mt-4">
     <% data.shuffle.each do |data| %>
       <% if data["node"]["owner"]["id"] != "275611699" %>
-      <div class="grid-item">
-        <figure class="gram">
-          <img class="img-fluid" src= "<%= data["node"]["display_url"] %>" >
-          <figcaption class="gram_cap">
-            <div class="ml-auto mr-auto">
-              <%= data["node"]["edge_media_to_caption"]["edges"][0]["node"]["text"] %>
-            </div>
-          </figcaption>        
-          </figure>
-      </div>
+      <% @shortcode = data["node"]["shortcode"] %>
+      <% @link = 'https://instagram.com/p/' + @shortcode %>
+      <%= link_to @link, target: '_blank' do %>
+        <div class="grid-item">
+          <figure class="gram">
+            <img class="img-fluid" src= "<%= data["node"]["display_url"] %>" >
+            <figcaption class="gram_cap">
+              <div class="ml-auto mr-auto">
+                <%= data["node"]["edge_media_to_caption"]["edges"][0]["node"]["text"] %>
+              </div>
+            </figcaption>        
+            </figure>
+        </div>
+      <% end %>
       <% end %>
     <% end %>
 </div>
