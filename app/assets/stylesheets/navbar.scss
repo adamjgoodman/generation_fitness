@@ -1,5 +1,9 @@
+.navbar {
+  box-shadow: 0px 1px 3px #2a2a2a;
+}
+
 .bg-faded{
-  background: image_url('red_bg.png');
+  background: rgba(#d3382e, 0.9);
   background-position: center;
   background-size: cover;
 }
@@ -14,7 +18,7 @@
   font-size: 13px;
   font-weight: lighter;
   border: 0;
-  background: #d3382e;
+  background: rgba(#d3382e, 0.9);
   border-radius: 0;
 }
 
@@ -63,4 +67,6 @@
     .navbar .dropdown-toggle, .nav-tabs .dropdown-toggle{
         margin-bottom: 0;
     }
+
+
 }

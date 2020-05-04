@@ -81,3 +81,5 @@ gem "figaro"
 gem "letter_opener", :group => :development
 
 gem 'httparty'
+
+gem 'will_paginate', '~> 3.1.0'

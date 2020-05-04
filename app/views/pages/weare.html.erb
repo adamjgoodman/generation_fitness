@@ -11,18 +11,19 @@
     });
   })
 </script>
+<meta name="viewport" content="width=device-width, initial-scale=0.6">
 <% data = HTTParty.get('https://www.instagram.com/explore/tags/wearegenerationfitness/?__a=1') %>
 <% data = data.body %>
 <% data = JSON.parse(data) %>
 <% data = data["graphql"]["hashtag"]["edge_hashtag_to_media"]["edges"] %>
-
+<% @data = data.paginate(page: params[:page], per_page: 20) %>
 <div class="col-12 text-center mt-4">
   <h1>#WeAreGenerationFitness</h1>
 </div>
 
 <div class="grid mt-4">
-    <% data.shuffle.each do |data| %>
-      <% if data["node"]["owner"]["id"] != "275611699" %>
+  <% @data.shuffle.each do |data| %>
+    <% if data["node"]["owner"]["id"] != "275611699" %>
       <% @shortcode = data["node"]["shortcode"] %>
       <% @link = 'https://instagram.com/p/' + @shortcode %>
       <%= link_to @link, target: '_blank' do %>
@@ -37,7 +38,8 @@
             </figure>
         </div>
       <% end %>
-      <% end %>
     <% end %>
+    <%= will_paginate @data %>
+  <% end %>
 </div>
 

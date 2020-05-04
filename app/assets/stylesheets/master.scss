@@ -34,27 +34,70 @@ body {
   min-width: 100px;
 }
 
-.grid {
-  margin: 0 auto;
+.pagination {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+  border-radius: 0.25rem;
+  bottom: 0;
+  position: absolute;
+  justify-content: center;
+  margin-bottom: 10px;
+  width: 100%;
+  font-weight: 100;
+}
+
+.pagination a {
+  color: #d3382e;
+}
+
+.pagination > * {
+  margin-right: 0.1em;
+  padding: 0.3em 0.4em;
+}
+
+.pagination a:hover {
+  background: #202020 none repeat scroll 0 0;
+  text-shadow: 1px 1px 1px #171717;
+}
+
+.pagination a:active {
+  text-shadow: none;
+}
+
+.pagination .current {
+  background: #202020 none repeat scroll 0 0;
+  color: white;
+  text-shadow: 1px 1px 1px #171717;
+}
+
+.pagination .disabled {
+  color: #C0C0C0;
 }
 
 @media only screen and (max-width: 768px) {
   .hours {
     font-size: 22px;
-    top: 48%;
+    top: 0;
     text-align: center;
     padding-left: 0;
     position: absolute;
     margin-top: 350px;
   }
+  figcaption {
+    display: none;
+  }
   .smash {
     display: none;
   }
   #girl {
+    height: 375px;
+    width: auto;
     z-index: 0;
   }
   .splash {
-    background-position: left;
+    height: 340px;
+    background: rgba(#d3382e, 0.9);
   }
   .navbar-toggleable-md .navbar-nav {
     display: block;
