@@ -11,17 +11,15 @@
 }
 
 .trainer {
-  bottom: 0;
-  position: absolute;
-  max-height: -webkit-fill-available;
+  background-image: image_url('trainer.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .training_header {
-  background: image_url('rower.png') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background: image_url('rower.png') no-repeat right fixed;
+  background-size: contain;
   height: 320px;
   position: auto;
   box-shadow: 0px 3px 8px #2a2a2a;
@@ -82,6 +80,8 @@
   top: 0;
   left: 0;
   background-color: rgba($color: darkred, $alpha: 0.5);
+  display: flex;
+  align-items: center;
 }
 
 .class_title {
@@ -91,11 +91,8 @@
   padding-bottom: 7.5px;
   color: white;
   text-align: center;
-  position: absolute;
   font-size: 35px;
   font-weight: 100;
-  margin-top: 130px;
-  bottom: 0;
   height: 165px;
 
   hr {
@@ -109,7 +106,7 @@
   font-size: 14px;
 }
 
-@media only screen and (max-width: 875px) {
+@media only screen and (max-width: 1050px) {
   .training_header {
     background: image_url('rower.png') no-repeat;
     background-size: cover;
@@ -130,13 +127,14 @@
     display: none;
   }
   .different {
+    text-align: center;
     font-weight: 300;
     font-size: 14px;
     line-height: 30px;
-    text-align: justify;
     overflow-wrap: break-word;
+    padding-bottom: 10px;
     h3 {
-      font-size: 1.25rem;
+      font-size: 1.5rem;
       overflow-wrap: normal;
     }
   }

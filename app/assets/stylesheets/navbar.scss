@@ -1,9 +1,5 @@
-.navbar {
-  box-shadow: 0px 1px 3px #2a2a2a;
-}
-
 .bg-faded{
-  background: rgba(#d3382e, 0.9);
+  background: rgb(37, 37, 37);
   background-position: center;
   background-size: cover;
 }
@@ -13,12 +9,16 @@
   margin-right: auto;
 }
 
+.navbar-toggler-icon, .navbar-toggler {
+  background: #d3382e;
+}
+
 .dropdown-menu {
   padding: 0;
   font-size: 13px;
   font-weight: lighter;
   border: 0;
-  background: rgba(#d3382e, 0.9);
+  background: rgb(37, 37, 37);
   border-radius: 0;
 }
 

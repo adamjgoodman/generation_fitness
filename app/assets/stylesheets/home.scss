@@ -17,15 +17,15 @@
 
 .hours {
   height: auto;
-  width: 100%;
-  position: absolute;
-  top: 25%;
   background: white;
   font-size: 30px;
   font-weight: 100;
   color: #d81921;
   padding-left: 30px;
   z-index: 1;
+  display: inline-table;
+  position: sticky;
+  width: 100%;
 }
 
 #girl {
@@ -33,7 +33,7 @@
 }
 
 .boom {
-  height: 580px;
+  height: 570px;
   width: auto;
   position: absolute;
   z-index: 0;
@@ -63,6 +63,7 @@
   width: 350px;
   height: 260px;
   margin: 0 auto;
+  object-fit: cover;
 }
 
 figure {

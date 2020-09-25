@@ -81,32 +81,39 @@ body {
     top: 0;
     text-align: center;
     padding-left: 0;
-    position: absolute;
-    margin-top: 350px;
+  }
+  .liner {
+    display: none;
   }
   figcaption {
     display: none;
   }
-  .smash {
-    display: none;
+  .boom {
+    height: 350px;
+    padding-bottom: 25px;
   }
   #girl {
     height: 375px;
     width: auto;
     z-index: 0;
+    display: none;
   }
   .splash {
     height: 340px;
-    background: rgba(#d3382e, 0.9);
   }
   .navbar-toggleable-md .navbar-nav {
     display: block;
   }
   .offers {
-    width: 90%;
+    width: 100%;
     height: auto;
   }
   .left, .right {
     display: none;
   }
+}
+
+.h-vh {
+  min-height: calc(100vh - 250px - 78px);
+
 }

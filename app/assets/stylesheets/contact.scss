@@ -11,7 +11,7 @@
 }
 
 .help {
-  background: image_url('red_bg.png') center;
+  background: #d3382e;
   color: white;
   font-weight: 100;
   font-size: 35px;
@@ -28,6 +28,7 @@
   border-width: 1px;
   margin-left: auto;
   margin-right: auto;
+  height: 40px;
 }
 
 label {
@@ -53,7 +54,7 @@ label {
   padding-right: 15%;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1050px) {
   .contact_header {
     background: image_url('girlsmile.png') no-repeat;
     background-size: cover;
