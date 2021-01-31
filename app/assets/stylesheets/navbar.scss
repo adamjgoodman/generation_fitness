@@ -1,7 +1,8 @@
 .bg-faded{
-  background: rgb(37, 37, 37);
+  background: darkred;
   background-position: center;
   background-size: cover;
+  background: rgba(211, 57, 46, 0.85)
 }
 
 .nav-item {
@@ -18,8 +19,8 @@
   font-size: 13px;
   font-weight: lighter;
   border: 0;
-  background: rgb(37, 37, 37);
-  border-radius: 0;
+  background: rgba(211, 57, 46, 0.90);
+  border-radius: 5%;
 }
 
 .logo_nav {

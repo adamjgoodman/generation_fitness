@@ -1,29 +1,25 @@
-<div class="contact_header">
-  <div class="tint">
+<div class="contact_header m-3 rounded">
+  <div class="tint px-3 rounded">
     <div class="classes">
       Email Us
     </div>
   </div>
 </div>
-<div class="col-12 help">
-  Let us know how we can help
-</div>
-
 <div class="row mt-4 mb-4 pt-2">
-  <div class="col-10 offset-1 col-sm-5 text-center"  style="background-color: whitesmoke;">
+  <div class="col-10 offset-1 col-sm-5 text-center rounded"  style="background-color: whitesmoke;">
     <div class="more">
       Want to find out more about Generation Fitness?<br /><br />
       Questions about your membership?<br /><br />
       Fill out the form and our dedicated member service representatives will be more than happy to assist you
     </div>
   </div>
-  <div class="col-10 offset-1 col-sm-5 offset-sm-0 ml-sm-2 contact_form text-center" style="background-color: whitesmoke;">
+  <div class="col-10 offset-1 col-sm-5 offset-sm-0 ml-sm-2 contact_form text-center rounded" style="background-color: whitesmoke;">
     <%= form_with model: Prospect.new do |form| %>
       <%= form.label :name, 'Name' %> <%= form.text_field :name, class: 'contact' %>
       <%= form.label :email, 'Email Address' %> <%= form.email_field :email, class: 'contact' %>
       <%= form.label :phone, 'Phone Number' %> <%= form.phone_field :phone, class: 'contact' %>
       <%= form.label :message, 'Message' %> <%= form.text_area :message, class: 'contact' %>
-      <%= form.submit 'Submit', class: 'btn btn-primary' %>
+      <%= form.submit 'Submit', class: 'btn btn-primary rounded' %>
     <% end %>
   </div>
 </div>
